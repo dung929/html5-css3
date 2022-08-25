@@ -1,0 +1,86 @@
+@font-face {
+    font-family: abc;
+    src: url(font/Roboto-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: auto;
+    font-family: abc;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    text-align: center;
+}
+.item img{
+    display: inline-block;
+    /* vertical-align: middle; */
+    width: 100%;
+    height: 95%;
+}
+.item{
+    text-align: center;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+}
+span{
+    line-height: 30px;
+    display: block;
+}
+.name{
+text-transform: uppercase;
+color: blue;
+font-size: 20px;
+}
+.price{
+    color: red;
+    font-weight: 700;
+}
+.btn-cart{
+    color: white;
+    background-color: blue;
+    border: none;
+    width: 100px;
+    height: 30px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+p{
+    color: #ffff;
+}
+h2{
+    font-size: 20px;
+}
+.cart{
+    transform: translateY(20px);
+    transition-duration:2s ;
+    background-color: rgb(255, 255, 255);
+
+}
+.item:hover .cart{
+    transform: translateY(-90px);
+    transition-duration:2s ;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thiết kế logo</title>
+  </head>
+  <body>
+    <h1>Thiết kế logo</h1>
+    <canvas id="myCanvas" width="300" height="300"></canvas>
+    <h2>Kết thúc</h2>
+    <script>
+      var ctx = document.getElementById("myCanvas").getContext("2d");
+      // định nghĩa kích thước của hình tam giác
+      var padding = 30;
+      var width = 150;
+      var height = 125;
+      // vẽ hình tam giác
+      ctx.beginPath();
+      ctx.moveTo(padding + width / 2, padding);
+      ctx.lineTo(padding + width, padding + height);
+      ctx.lineTo(padding, padding + height);
+      ctx.closePath();
+      //đổ màu cho hình tam giác
+      // ctx.fillStyle = "yellow";
+      // ctx.fill();
+      //tạo gradient
+      var grd = ctx.createLinearGradient(0, 0, 0, height);
+      grd.addColorStop(0, "#ffc821");
+      grd.addColorStop(1, "#faf100");
+      //tạo shadow thì phải đặt trước khi đổ màu
+      ctx.shadowBlur = 15;
+      //xác định độ rộng của bóng
+      ctx.shadowColor = "Black";
+      ctx.fillStyle = grd;
+      ctx.fill();
+      //xóa bỏ bóng shawdow
+      ctx.shadowColor = "transparent";
+      //tạo đường màu vàng ngoài cùng
+      ctx.lineWidth = 15;
+      ctx.lineJoin = "round";
+      ctx.strokeStyle = grd;
+      ctx.stroke();
+      //tạo gradient màu xám
+      grd = ctx.createLinearGradient(0, padding, 0, padding + height);
+      grd.addColorStop(0, "transparent");
+      grd.addColorStop(0.5, "transparent");
+      grd.addColorStop(0.5, "#dcaa09");
+      grd.addColorStop(1, "#faf100");
+      ctx.fillStyle = grd;
+      ctx.fill();
+      //tạo đường màu đen
+      ctx.lineWidth = 5;
+      ctx.lineJoin = "round";
+      ctx.strokeStyle = "black";
+      ctx.stroke();
+      //tạo chấm than
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.font = "bold 80px Time New Roman";
+      ctx.fillStyle = "black";
+      ctx.fillText("!", padding + width / 2, padding + height / 1.7);
+    </script>
+  </body>
+</html>

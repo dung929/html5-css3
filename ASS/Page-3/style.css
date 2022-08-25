@@ -1,0 +1,107 @@
+body{
+    font-family:'Roboto-BoldItalic', cursive ;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.header{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: aqua;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 15px;
+}
+.logo{
+    text-align: center;
+}
+.item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+p{
+    font-size: 10px;
+    margin: 20px 0 10px 0;
+}
+.text button{
+    padding: 5px 20px 5px 20px;
+    background: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+}
+button:hover{
+    background: aqua;
+}
+.footer{
+    margin-top: 20px;
+    padding: 20px;
+    background: black;
+}
+.footer .container{
+    display: flex;
+     justify-content: space-between;
+     color: white;
+     align-items: center;
+}
+.footer input{
+    background: none;
+    border-color: yellow;
+    padding: 5px;
+    border-radius: 8px;
+}
+.footer button{
+    background: orange;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    font-weight: 700;
+}
+.banner{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.banner img{
+    transition: all 0.3 ease-in-out;
+}
+.banner img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.img{
+    display: block;
+    overflow: hidden;
+}
+.img img{
+transition: all 0.5 ease-in-out;
+}
+.img img:hover{
+    transform:rotate(5deg);
+    transition-duration: 2s;
+}

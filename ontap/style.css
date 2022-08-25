@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto-Light', cursive;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.banner{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.danhmuc {
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    padding: 5px;
+}
+
+.menu {
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+li a:hover{
+    color: aqua;
+}
+
+img {
+    width: 100%;
+}
+h2{
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.gift{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.item2{
+    background-color: #E2DCDC;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+.text h2{
+    width: 400px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.boxgift{
+    padding: 100px;
+    background: #fff;
+    border: 1px solid #fff;
+}
+.gift-item{
+    text-align: center;
+    padding: 10px;
+}
+.footer{
+    background: #4A5680;
+    text-align: center;
+    color: #E2DCDC;
+    padding: 10px;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: #E2DCDC;
+    padding: 5px;
+}
+.item img{
+    height: 100%;
+    transition: all 0.3 ease-in-out;
+    transition-duration: 1s;
+}
+.item{
+    overflow: hidden;
+}
+.item:hover .cart{
+    transform: translateY(-40px);
+    transition-duration: 1s;
+}
+.item img:hover{
+    transform: scale(1.1);
+}

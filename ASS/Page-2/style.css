@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto-Bold', cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.banner{
+    overflow: hidden;
+    display: block;
+}
+.banner img{
+    transition: all 0.5 ease-in-out;
+}
+.banner img:hover{
+    transform: scale(1.1);
+    transition-duration:2s ;
+}
+.banner img,
+.item-top img,
+.item-bottom img {
+    width: 100%;
+}
+.header{
+    text-align: center;
+    margin: 20px;
+}
+.img img{
+    transition: all 0.5 ease-in-out;
+}
+.img img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.img{
+    display: block;
+    overflow: hidden;
+}
+.text{
+    display: block;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+ul li a:hover{
+    color: aqua;
+}
+.item-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 30px;
+}
+.item-top h3{
+    font-size: 30px;
+}
+.item-top p{
+    font-size: 13px;
+    margin: 15px 0px 15px 0px;
+}
+.item-top button{
+    padding: 8px;
+    background: orange;
+    color: aliceblue;
+    border-radius: 8px;
+    border: none;
+}
+.item-top button:hover{
+    background: aqua;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+.item-bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.item{
+    height: 80%;
+    overflow: hidden;
+    display: block;
+}
+.item img{
+    transition: all 0.5 ease-in-out;
+}
+.item img:hover{
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+.item img{
+    height: 100%;
+}
+.cart{
+    transform: translateY(100px);
+    background-color: rgb(255, 255, 255);
+    transition-duration:1s ;
+}
+.item:hover .cart{
+    transform: translateY(-104px);
+    transition-duration:1s ;
+}
+.cart{
+    text-align: center;
+}
+span{
+    margin: 10px 0 10px 0;
+    display: block;
+}
+.cart button{
+    padding: 5px;
+    width: 100%;
+    background: black;
+    color: white;
+    border-radius: 8px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+.footer input{
+    border-color: yellow;
+    color: white;
+    padding: 5px;
+    background: none;
+    border-radius: 8px;
+}
+.footer button{
+    background: orange;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 5px;
+}

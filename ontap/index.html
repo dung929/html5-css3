@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e123c1a84c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="danhmuc">
+                <div>
+                    <span>Welcome to our store</span>
+                </div>
+                <div>
+                    <h1>KALLES</h1>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-angry"></i>
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+            <hr>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Sale</a></li>
+                    <li><a href="">Page</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="/Rectangle 1.png" alt="">
+    </div>
+
+    <div class="container">
+        <h2>WHAT'S HOT</h2>
+        <div class="items">
+            <div class="item">
+                <img src="/Rectangle 2.png" alt="">
+                <div class="cart">
+                    <span>450$</span>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-store"></i>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Rectangle 4.png" alt="">
+                <div class="cart">
+                    <span>450$</span>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-store"></i>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Rectangle 4.png" alt="">
+                <div class="cart">
+                    <span>450$</span>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-store"></i>
+                </div>
+            </div>
+            <div class="item">
+                <img src="/Rectangle 5.png" alt="">
+                <div class="cart">
+                    <span>450$</span>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-store"></i>
+                </div>
+            </div>
+        </div>
+        <div class="item2">
+            <div class="text">
+                <h2>CHOICE A GIFT?</h2>
+                <h2>Drag and drop the gift of your choice to the right </h2>
+            </div>
+            <div class="gift">
+                <div class="gift-item" id="drag">
+                    <img src="/Rectangle 7.png" alt="" id="drag" draggable="true" ondragstart="drap(event)">
+                </div>
+                <div class="gift-item">
+                    <img src="/Rectangle 8.png" alt="" id="drag" draggable="true" ondragstart="drap(event)">
+                </div>
+                <div class="gift-item">
+                    <div class="boxgift" ondragover="allowDrop(event)" ondrop="drop(event)">
+                    </div>
+                    <span>MY GIFT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer">
+            <h2>Bui Duy Dung</h2>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    function drap(ev){
+        ev.dataTransfer.setData("text",ev.target.id)
+    }
+    function allowDrop(ev){
+        ev.preventDefault();
+    }
+    function drop(ev){
+        ev.preventDefault();
+        var data= ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>

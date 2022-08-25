@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input,
+.search button{
+    padding: 25px;
+    border-radius: 20px;
+    border: none;
+}
+.search input{
+    width: 400px;
+    background-color: #E8E8E8;
+}
+.search button{
+    width: 80px;
+}
+.search button:hover{
+    background-color: aqua;
+}
+i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.menu{
+    background-color: #0A472E;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding: 20px;
+}
+ul li{
+    display: inline-block;
+}
+li:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+.img{
+    overflow: hidden;
+    display: block;
+}
+.img img{
+    transition: all 0.3 ease-in-out;
+    transition-duration: 1s;
+}
+.img img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+.item{
+    overflow: hidden;
+    display: block;
+}
+h3{
+    color: #4CA402;
+}
+span{
+    color: #FF0505;
+}
+.sale{
+    background-color: #4CA402;
+    color: white;
+    padding: 15px;
+    transform: translateY(100px);
+    transition-duration: 1s;
+}
+.sale h2{
+    font-size: 20px;
+}
+.item:hover .sale{
+    transform: translateY(-105px);
+    transition-duration: 1s;
+}
+.drag-drop{
+    background-color: #CBFB9C;
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    grid-gap: 30px;
+    padding: 50px;
+    align-items: center ;
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    background: #0A472E;
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 20px;
+}
+.drop div{
+    background: white;
+    padding: 150px
+}
+.sale1 {
+    position: absolute;
+    top: 40%;
+    transform: translateX(-200px);
+    transition-duration: 1s;
+    background: green;
+    opacity: 0.7;
+    color: aliceblue;
+    padding: 5px;
+}
+.item1:hover .sale1{
+    transform: translateX(0px);
+    transition-duration: 1s;
+}
+.item1{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.item2{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.anh{
+    position: absolute;
+    bottom: -400px;
+    transition-duration: 1s;
+}
+.item2:hover .anh{
+    transform: translateY(-500px);
+    transition-duration: 1s;
+}
